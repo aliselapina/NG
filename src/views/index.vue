@@ -16,7 +16,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .MainLayout{
-  // background-image: url('../assets/header2.jpg');
   width: 100%;
 }
 </style>
