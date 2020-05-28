@@ -4,13 +4,14 @@
   <div class="PhilosophyPage__Stories columns is-multiline">
   <StoryItem v-for="(story, index) in data.stories"
             :key="index"
-            :content="story"/>
+            :content="story"
+            :showPartners="false"/>
   </div>
   </div>
 </template>
 
 <script>
-import StoryItem from './StoryItem'
+import StoryItem from '@/components/StoryItem'
 import data from '@/data'
 export default {
   name: 'Philosophy',

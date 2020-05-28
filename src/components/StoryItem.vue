@@ -1,6 +1,6 @@
 <template>
     <div class="StoryItem column is-half">
-        <img class="StoryItem__Image" :src="require('../../../assets/'+content.image)" />
+        <img class="StoryItem__Image" :src="require('../assets/'+content.image)" />
         <p class="StoryItem__Title"> {{ content.name }} </p>
     </div>
 </template>
@@ -8,7 +8,8 @@
 export default {
   name: 'StoryItem',
   props: {
-    content: { type: Object }
+    content: { type: Object },
+    showPartners: { type: Boolean }
   }
 }
 </script>
@@ -24,6 +25,9 @@ export default {
         display: inline-block;
         margin: 10px;
         height: 300px;
+        &--partner{
+          height: 200px;
+        }
     }
     &__Title{
         display: inline-block;

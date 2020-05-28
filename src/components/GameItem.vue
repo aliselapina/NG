@@ -28,7 +28,7 @@ export default {
   color: #fff;
   font-weight: bold;
   width: 250px;
-  height: 250px;;
+  height: 250px;
   margin: 30px;
   display: inline-block;
   padding: 10px;

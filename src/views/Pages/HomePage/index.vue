@@ -5,18 +5,19 @@
         <h1 class="display-4">NORDIC GROUP</h1>
         <router-link class="HomePage__RouterLink"
                     to="GamesAndSimulations">
-          <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā.</span> <br>
-          <span> Uz doto brīdi izstrādātas 77 spēles un simulācijas.
-          </span>
+          <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā.</span> <br><br>
+          <span> Uz šo brīdi izstrādātas</span> <br>
+          <span class="GamesCount">77</span> <br>
+          <span>spēles un simulācijas </span>
         </router-link>
       </div>
     </b-jumbotron>
 
-        <b-jumbotron>
+        <b-jumbotron style="padding: 20px;">
             <img src="../../../assets/banner11.jpg" style="width:70%"/>
         </b-jumbotron>
 
-         <b-jumbotron>
+         <b-jumbotron style="padding: 20px;">
             <div class="colomns is-multiline">
               <router-link class="HomePage__Column column is-one-third"
                           to="GamesAndSimulations">
@@ -35,7 +36,7 @@
               </div>
         </b-jumbotron>
 
-         <b-jumbotron>
+         <b-jumbotron style="padding: 20px;">
             <p class="HomePage__list">Pieredzē balstīta mācīšanās <br> Prasmju spēks <br> Atšķirīga pieeja <br> Apmācību veikšanai nepieciešamā analīze <br> Pielāgošanās un elastība <br> Atklātie un korporatīvie semināri</p>
         </b-jumbotron>
         </div>
@@ -60,7 +61,7 @@ export default {
     color: darkslategray;
   }
   & span {
-    margin: 20px auto;
+    margin: -20px;
   }
 }
 .HomePage__Column{
@@ -84,15 +85,19 @@ export default {
 }
 .HomePage__firstJumb {
   background-image: url('../../../assets/parrunupavelnieks.jpg');
-  background-size: 50% 400px;
+  background-size: 50% 450px;
   padding: 0;
-  height: 400px;
+  height: 450px;
   &White{
     background-color: rgb(255,255,255,0.6);
     width: 50%;
     float: left;
-    height: 400px;
+    height: 450px;
     padding: 40px;
   }
+}
+.GamesCount {
+  font-size: 100px;
+  margin: -20px;
 }
 </style>

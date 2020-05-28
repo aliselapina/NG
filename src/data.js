@@ -183,9 +183,19 @@ export default {
       about: 'ugis.gif' }
   ],
   stories: [
-    { name: '2019.gada sagaidīšana Tatru virsotnē Rysy',
-      image: 'kalni.jpg' },
-    { name: 'Kalni',
-      image: 'banner2.jpg' }
+    { name: 'Mēs kāpjam kalnos',
+      image: 'banner2.jpg' },
+    { name: 'Mēs spēlējam florbolu',
+      image: 'banner2.jpg' },
+    { name: 'Mēs organizējam nometnes bērniem',
+      image: 'upe.jpg' },
+    { name: 'Mēs spēlējam hokeju',
+      image: 'lauvas.jpg' }
+  ],
+  partners: [
+    { name: 'CooolToool',
+      image: 'coooltoool.jpg' },
+    { name: 'NTI Rus',
+      image: 'nti.jpg' }
   ]
 }
