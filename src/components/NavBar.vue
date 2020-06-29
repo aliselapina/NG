@@ -60,7 +60,7 @@ export default {
     }
   }
   .NavBar__Image{
-    width: 150px;
+    width: 100px;
     float: left;
     margin-top: -20px;
     margin-left: 100px;

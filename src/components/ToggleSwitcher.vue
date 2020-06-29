@@ -175,7 +175,7 @@ export default {
 
     &__TextValue{
         position: absolute;
-        width: 178px;
+        width: 180px;
         &--left
     {
         top:-27px;

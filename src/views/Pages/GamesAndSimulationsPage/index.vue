@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Mūsu TOP lietšķās spēles un biznesa simulācijas</h1>
+    <h1>Dažas no mūsu populārākajām lietšķajām spēlēm un biznesa simulācijas</h1>
     <ToggleSwitcher :value="showGames"
                     :firstLabelValue="'Spēles & simulācijas'"
                     :secondLabelValue="'Apmācības'"
@@ -19,7 +19,7 @@
                 :content="seminar"
                 :showGames="false"></GameItem>
       </div>
-      <a to="/Contacts" class="BottomButton">Plašākai informācijai par spēlēm un apmācībām, sazinies ar mums!</a>
+      <!-- <a to="/Contacts" class="BottomButton">Plašākai informācijai par spēlēm un apmācībām, sazinies ar mums!</a> -->
   </div>
 </template>
 

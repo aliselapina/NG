@@ -7,29 +7,29 @@
                     to="GamesAndSimulations">
           <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā.</span> <br><br>
           <span> Uz šo brīdi izstrādātas</span> <br>
-          <span class="GamesCount">77</span> <br>
+          <span class="GamesCount">82</span> <br>
           <span>spēles un simulācijas </span>
         </router-link>
       </div>
     </b-jumbotron>
 
-        <b-jumbotron style="padding: 20px;">
+        <!-- <b-jumbotron style="padding: 20px;">
             <img src="../../../assets/banner11.jpg" style="width:70%"/>
-        </b-jumbotron>
+        </b-jumbotron> -->
 
          <b-jumbotron style="padding: 20px;">
             <div class="colomns is-multiline">
-              <router-link class="HomePage__Column column is-one-third"
+              <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
                 Lietišķās spēles un simulācijas
                 <p>Piedāvājam lietišķo spēļu un biznesa simulāciju izpēles, apmācības un licenses.</p>
                 </router-link>
-              <router-link class="HomePage__Column column is-one-third"
+              <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
                 Biznesa apmācības
                 <p>Organizējam seminārus un biznesa apmācības ar pielāgotu programmu katra uzņēmuma individuālām vajadzībām.</p>
               </router-link>
-              <router-link class="HomePage__Column column is-one-third"
+              <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
                 Vēl
                 <p>Iztradājam lietišķās spēles un biznesa simulācijas dažādu nozaru uzņēmumiem, kā arī eksportējam mūsu radītās spēles ārzemju klientiem.</p></router-link>

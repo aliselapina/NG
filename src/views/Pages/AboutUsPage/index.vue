@@ -1,16 +1,15 @@
 <template>
   <div class="container">
+     <h1>Mūsu komanda</h1>
   <div class="AboutUs__Banner columns is-multiline">
     <button class="AboutUs__BannerItem column is-one-third">
-      <div class="text"> Mēs radām biznesa  spēles un interaktīvus apmācību instrumentus, kas ļauj mūsu klientiem Latvijā, Lietuvā, Krievijā, Ukrainā, Polijā, Baltkrievijā, Rumānijā, Indonēzijā, ASV un Kanādā apgūt zināšanas un trenēt iemaņas  interesantā, iesaistošā un efektīvā veidā</div></button>
+      <div class="text"> Mēs radām biznesa  spēles un interaktīvus apmācību instrumentus</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs ticam pieredzē balstītām apmācībām</div></button>
-    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mūsu vairāk kā 20 gadu pieredze dažādās valstīs apliecina, ka spēle ir labākais un ātrākais apmācību veids. Esam izstrādājuši vairāk kā 70 dažādas simulācijas un apmācību galda spēles, kas ļauj apgūt vadības, pārdošanas, plānošanas un sadarbības prasmes aizraujošā un dinamiskā veidā</div></button>
+    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mūsu vairāk kā 20 gadu pieredze dažādās valstīs apliecina, ka spēle ir labākais un ātrākais apmācību veids</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mums ir svarīgi: ticēt tam, ko darām, uzticēties un būt uzticamiem, būt inovatīviem un darīt no</div></button>
-    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs veidojam un vadām uzņēmuma specifikai pielāgotas ilgtermiņa apmācību programmas, izmantojot mūsu radītos apmācību instrumentus, kā arī palīdzam izveidot uzņēmumu iekšējās apmācības sistēmas un sagatavojam trenerus, kuri prot lietot spēļu apmācību instrumentus</div></button>
-    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Izstrādājot mūsu spēles, mēs vēlamies apmācības padarīt  iesaistošākas un efektīvākas. Mēs visu darām praktiski, jo ticam, ka darot mēs apgūstam prasmes vislabāk</div></button>
+    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs eksportējam savus produktus uz ASV, Kanādu, Lietuvu, Krieviju, Ukrainu, Poliju, Baltkrieviju , Rumāniju un Indonēziju</div></button>
+    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs radām instrumentus apmācībām uzņēmumu iekšienē</div></button>
 </div>
-    <h1>Mūsu komanda</h1>
-
     <div class="columns is-multiline">
       <GameItem v-for="(person, index) in data.persons"
                 :key="index"
