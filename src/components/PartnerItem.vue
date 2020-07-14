@@ -15,7 +15,6 @@ export default {
   methods: {
     goToUrl () {
       let url = '//' + this.content.link
-      console.log(url)
       window.open(url, '_blank')
     }
   }

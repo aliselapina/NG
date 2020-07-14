@@ -19,11 +19,6 @@ export default {
   name: 'Philosophy',
   components: {
     GameItem
-  },
-  data () {
-    return {
-      data
-    }
   }
 }
 </script>
