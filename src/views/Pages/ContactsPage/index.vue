@@ -1,12 +1,19 @@
 <template>
   <div class="ContactPage">
     <h2 class="ContactPage__Title"> Kontakti</h2>
-    <!-- <p> Darba laiks: <br> Pr - P  10:00 - 16:00</p> -->
     <p>Tālrunis: +371 67316888</p>
     <p>E-pasts: birojs@nti.lv </p>
     <p> Adrese: Mārupes iela 16, Rīga</p>
     <div class="columns is-multiline">
+      <h2>Starptautiskie kontakti</h2>
       <PartnerItem v-for="(partner, index) in data.partners"
+                      :key="index"
+                      :content="partner"
+                      :showPartners="true"/>
+    </div>
+    <div class="columns is-multiline">
+      <h2>Darbības virzieni</h2>
+      <PartnerItem v-for="(partner, index) in data.contacts"
                       :key="index"
                       :content="partner"
                       :showPartners="true"/>

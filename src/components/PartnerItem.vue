@@ -1,8 +1,9 @@
 <template>
-    <div class="PartnerItem column is-one-fourth">
+    <a class="PartnerItem column is-one-third"
+        @click="goToUrl">
         <img class="PartnerItem__Image" :src="require('../assets/'+content.image)" />
         <p class="PartnerItem__Title"> {{ content.name }} </p>
-    </div>
+    </a>
 </template>
 <script>
 export default {
@@ -10,21 +11,30 @@ export default {
   props: {
     content: { type: Object },
     showPartners: { type: Boolean }
+  },
+  methods: {
+    goToUrl () {
+      let url = '//' + this.content.link
+      console.log(url)
+      window.open(url, '_blank')
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
 .PartnerItem{
-    font-style: italic;
+    color: #fff;
+    font-weight: bold;
     width: 250px;
     height: 170px;
-    background-color: whitesmoke;
+    background-color: rgb(10,75,95, 0.8);
     display: inline-block;
     margin: 30px;
+    cursor: pointer;
     &__Image{
         display: inline-block;
         margin: 10px;
-        height: 120px;
+        height: 95px;
     }
     &__Title{
         display: block;

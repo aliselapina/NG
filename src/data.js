@@ -193,9 +193,25 @@ export default {
       image: 'lauvas.jpg' }
   ],
   partners: [
+    { name: 'Internationali',
+      image: 'nti.jpg',
+      link: 'nti-group.com' },
+    { name: 'Krievija',
+      image: 'nti_su.png',
+      link: 'nti.su' },
+    { name: 'Ukraina',
+      image: 'ntilogo.jpg',
+      link: 'nordic.in.ua' }
+  ],
+  contacts: [
     { name: 'CooolToool',
-      image: 'coooltoool.jpg' },
-    { name: 'NTI Rus',
-      image: 'nti.jpg' }
+      image: 'coooltoool.jpg',
+      link: 'coooltoool.net' },
+    { name: 'IM Games',
+      image: 'imgames.jpg',
+      link: 'im-games.org' },
+    { name: 'Viennese',
+      image: 'vlogo.jpg',
+      link: 'viennese.org' }
   ]
 }

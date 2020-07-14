@@ -17,7 +17,6 @@
                 :showGames="true"
                 :showPersons="true"></GameItem>
       </div>
-      <a to="/Contacts" class="BottomButton">Plašākai informācijai par spēlēm un apmācībām, sazinies ar mums!</a>
   </div>
 </template>
 
