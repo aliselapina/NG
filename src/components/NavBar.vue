@@ -1,6 +1,6 @@
 <template>
   <div class="NavBar">
-    <img class="NavBar__Image" src="../assets/ntilogo.jpg" alt="logo"/>
+    <img class="NavBar__Image" src="../assets/NTI_logo1.png" alt="logo"/>
     <router-link class="NavBar__Item" to="/Home">{{navItem.home[currentLocale]}}</router-link>
     <router-link class="NavBar__Item" to="GamesAndSimulations">{{navItem.games[currentLocale]}}</router-link>
     <router-link class="NavBar__Item" to="/AboutUs">{{navItem.aboutUs[currentLocale]}}</router-link>

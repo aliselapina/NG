@@ -10,14 +10,18 @@
       <GameItem v-for="(game, index) in data.games"
                 :key="index"
                 :content="game"
-                :showGames="true"></GameItem>
+                :showGames="true"
+                :showSeminars="false"
+                :showStories="false"></GameItem>
       </div>
       <div class="columns is-multiline"
           v-if="showGames">
       <GameItem v-for="(seminar, index) in data.seminars"
                 :key="index"
                 :content="seminar"
-                :showGames="false"></GameItem>
+                :showGames="true"
+                :showSeminars="true"
+                :showStories="false"></GameItem>
       </div>
       <!-- <a to="/Contacts" class="BottomButton">Plašākai informācijai par spēlēm un apmācībām, sazinies ar mums!</a> -->
   </div>

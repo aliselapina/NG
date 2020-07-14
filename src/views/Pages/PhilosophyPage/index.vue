@@ -2,21 +2,23 @@
   <div class="PhilosophyPage">
     <h1>Mēs esam kas vairāk nekā biznesa apmācību kompānija </h1>
   <div class="PhilosophyPage__Stories columns is-multiline">
-  <StoryItem v-for="(story, index) in data.stories"
+  <GameItem v-for="(story, index) in data.stories"
             :key="index"
             :content="story"
-            :showPartners="false"/>
+            :showGames="true"
+            :showSeminars="false"
+            :showStories="true"/>
   </div>
   </div>
 </template>
 
 <script>
-import StoryItem from '@/components/StoryItem'
+import GameItem from '@/components/GameItem'
 import data from '@/data'
 export default {
   name: 'Philosophy',
   components: {
-    StoryItem
+    GameItem
   },
   data () {
     return {
