@@ -14,10 +14,16 @@
 
 <script>
 import GameItem from '@/components/GameItem'
+import data from '@/data'
 export default {
   name: 'Philosophy',
   components: {
     GameItem
+  },
+  data () {
+    return {
+      data
+    }
   }
 }
 </script>
