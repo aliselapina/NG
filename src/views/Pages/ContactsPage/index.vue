@@ -1,6 +1,6 @@
 <template>
   <div class="ContactPage">
-    <h2 class="ContactPage__Title"> Kontakti</h2>
+    <h2 class="Headline"> Kontakti</h2>
     <p>Tālrunis: +371 67316888</p>
     <p>E-pasts: birojs@nti.lv </p>
     <p> Adrese: Mārupes iela 16, Rīga</p>
@@ -40,8 +40,5 @@ export default {
 <style lang="scss" scoped>
 .ContactPage{
   margin-top: 50px;
-  &__Title{
-    margin: 40px;
-  }
 }
 </style>

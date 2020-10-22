@@ -1,6 +1,6 @@
 <template>
   <div class="PhilosophyPage">
-    <h1>Mēs esam kas vairāk nekā biznesa apmācību kompānija </h1>
+    <h1 class="Headline">Mēs neesam tikai biznesa apmācību kompānija, mēs arī -</h1>
   <div class="PhilosophyPage__Stories columns is-multiline">
   <GameItem v-for="(story, index) in data.stories"
             :key="index"
@@ -37,7 +37,7 @@ export default {
   padding: 20px;
 }
 .PhilosophyPage__Stories{
-  margin: 50px auto;
+  margin: auto auto 50px auto;
   position: relative;
   width: 80%;
 }

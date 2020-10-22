@@ -148,8 +148,8 @@ export default {
 
     .ToggleWithText {
         z-index: 0;
-        position: relative;
-        padding-bottom: 10px;
+        padding: 0 0 10px 0;
+        margin: auto;
         &__label
     {
         font-size: large;

@@ -6,9 +6,6 @@
       <b-dropdown-item v-for="(item, index) in content.about"
                       :key="index">{{ item }}</b-dropdown-item>
     </b-dropdown>
-    <b-dropdown v-if="showPersons && !showStories">
-      <img class="GameItem__Image" alt="person" :src="require('../assets/'+content.about)">
-    </b-dropdown>
   </b-button>
 </template>
 

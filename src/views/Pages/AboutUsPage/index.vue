@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-     <h1>Mūsu komanda</h1>
+     <h1 class="Headline">Mūsu komanda</h1>
   <div class="AboutUs__Banner columns is-multiline">
     <button class="AboutUs__BannerItem column is-one-third">
       <div class="text"> Mēs radām biznesa  spēles un interaktīvus apmācību instrumentus</div></button>
@@ -81,5 +81,14 @@ background-size: cover;
 }
 .AboutUs__BannerItem:hover .text{
    color: black;
+}
+</style>
+<style lang="scss">
+.Headline {
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: fit-content;
+  padding: 0 32px;
+  margin: auto auto 20px auto;
 }
 </style>

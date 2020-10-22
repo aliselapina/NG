@@ -5,19 +5,14 @@
         <h1 class="display-4">NORDIC GROUP</h1>
         <router-link class="HomePage__RouterLink"
                     to="GamesAndSimulations">
-          <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā.</span> <br><br>
+          <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā</span> <br><br>
           <span> Uz šo brīdi izstrādātas</span> <br>
           <span class="GamesCount">82</span> <br>
           <span>spēles un simulācijas </span>
         </router-link>
       </div>
     </b-jumbotron>
-
-        <!-- <b-jumbotron style="padding: 20px;">
-            <img src="../../../assets/banner11.jpg" style="width:70%"/>
-        </b-jumbotron> -->
-
-         <b-jumbotron style="padding: 20px;">
+         <b-jumbotron class="Jumbotron Jumbotron__Middle">
             <div class="colomns is-multiline">
               <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
@@ -32,11 +27,11 @@
               <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
                 Vēl
-                <p>Iztradājam lietišķās spēles un biznesa simulācijas dažādu nozaru uzņēmumiem, kā arī eksportējam mūsu radītās spēles ārzemju klientiem.</p></router-link>
+                <p>Izstradājam lietišķās spēles un biznesa simulācijas dažādu nozaru uzņēmumiem, kā arī eksportējam mūsu radītās spēles ārzemju klientiem.</p></router-link>
               </div>
         </b-jumbotron>
 
-         <b-jumbotron style="padding: 20px;">
+         <b-jumbotron class="Jumbotron Jumbotron__Bottom">
             <p class="HomePage__list">Pieredzē balstīta mācīšanās <br> Prasmju spēks <br> Atšķirīga pieeja <br> Apmācību veikšanai nepieciešamā analīze <br> Pielāgošanās un elastība <br> Atklātie un korporatīvie semināri</p>
         </b-jumbotron>
         </div>
@@ -84,7 +79,7 @@ export default {
   }
 }
 .HomePage__firstJumb {
-  background-image: url('../../../assets/parrunupavelnieks.jpg');
+  background-image: url('../../../assets/games/parrunupavelnieks.jpg');
   background-size: 50% 450px;
   padding: 0;
   height: 450px;
@@ -99,5 +94,8 @@ export default {
 .GamesCount {
   font-size: 100px;
   margin: -20px;
+}
+.Jumbotron {
+  padding: 20px;
 }
 </style>

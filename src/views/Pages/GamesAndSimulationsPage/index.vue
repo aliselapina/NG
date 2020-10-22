@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Dažas no mūsu populārākajām lietšķajām spēlēm un biznesa simulācijas</h1>
+    <h1 class="Headline">Vispieprasītākās spēles un apmācības</h1>
     <ToggleSwitcher :value="showGames"
                     :firstLabelValue="'Spēles & simulācijas'"
                     :secondLabelValue="'Apmācības'"

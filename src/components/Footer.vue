@@ -1,17 +1,16 @@
 <template>
-  <div class="NavBar">
-    <img class="NavBar__Image" src="../assets/logo/nti.png" alt="logo"/>
-    <router-link class="NavBar__Item" to="/">{{navItem.home[currentLocale]}}</router-link>
-    <router-link class="NavBar__Item" to="GamesAndSimulations">{{navItem.games[currentLocale]}}</router-link>
-    <router-link class="NavBar__Item" to="/AboutUs">{{navItem.aboutUs[currentLocale]}}</router-link>
-    <router-link class="NavBar__Item" to="/Philosophy">{{navItem.philosophy[currentLocale]}}</router-link>
-    <router-link class="NavBar__Item" to="/Contacts">{{navItem.contacts[currentLocale]}}</router-link>
+  <div class="Footer">
+    <router-link class="Footer__Item" to="/">{{navItem.home[currentLocale]}}</router-link>
+    <router-link class="Footer__Item" to="GamesAndSimulations">{{navItem.games[currentLocale]}}</router-link>
+    <router-link class="Footer__Item" to="/AboutUs">{{navItem.aboutUs[currentLocale]}}</router-link>
+    <router-link class="Footer__Item" to="/Philosophy">{{navItem.philosophy[currentLocale]}}</router-link>
+    <router-link class="Footer__Item" to="/Contacts">{{navItem.contacts[currentLocale]}}</router-link>
     <a href="https://www.facebook.com/NordicTrainingInternational/"
-      class="NavBar__Item">
+      class="Footer__Item">
       <span class="label">FB</span>
     </a>
     <a href="https://www.linkedin.com/company/nordic-training-international/"
-      class="NavBar__Item">
+      class="Footer__Item">
       <span class="label">LI</span>
     </a>
   </div>
@@ -39,32 +38,25 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  .NavBar {
+<style lang="scss" scoped>
+  .Footer {
     padding: 30px;
-    text-align: right;
+    text-align: center;
     width: 100%;
-    margin-bottom: 20px;
     /*background-image: url('../assets/header2.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;*/
     background-color: #9fb2c4;
   }
-  .NavBar__Item{
+  .Footer__Item{
     margin: auto 10px;
     color: #fff;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: initial ;
     &:hover{
       text-decoration: none;
       text-shadow: 0px 0px 3px #fff
     }
-  }
-  .NavBar__Image{
-    width: 100px;
-    float: left;
-    margin-top: -20px;
-    margin-left: 100px;
   }
 </style>
