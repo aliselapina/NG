@@ -91,4 +91,16 @@ background-size: cover;
   padding: 0 32px;
   margin: auto auto 20px auto;
 }
+
+@media only screen and (max-width: 768px) {
+  .AboutUs__Banner{
+    height: 250px;
+  }
+  .AboutUs__BannerItem{
+    visibility: hidden;
+  }
+  .Headline {
+    font-size: 20px !important;
+  }
+}
 </style>

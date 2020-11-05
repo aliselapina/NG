@@ -1,9 +1,11 @@
 <template>
-    <a class="PartnerItem column is-one-third"
-        @click="goToUrl">
-        <img class="PartnerItem__Image" :src="require('../assets/'+content.image)" />
-        <p class="PartnerItem__Title"> {{ content.name }} </p>
-    </a>
+    <div class="PartnerItem column is-one-third">
+        <img v-if="showPartners" @click="goToUrl" class="PartnerItem__Image" :src="require('../assets/'+content.image)" />
+        <p class="PartnerItem__Title" @click="goToUrl"> {{ content.name }} </p>
+        <p v-if="!showPartners" @click="goToUrl">{{ content.link }}</p>
+        <p>{{ content.email }}</p>
+        <p>{{ content.number }}</p>
+    </div>
 </template>
 <script>
 export default {
@@ -14,7 +16,7 @@ export default {
   },
   methods: {
     goToUrl () {
-      let url = '//' + this.content.link
+      let url = this.content.link
       window.open(url, '_blank')
     }
   }
@@ -22,11 +24,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .PartnerItem{
-    color: #fff;
-    font-weight: bold;
     width: 250px;
     height: 170px;
-    background-color: rgb(10,75,95, 0.8);
     display: inline-block;
     margin: 30px;
     cursor: pointer;
@@ -38,6 +37,12 @@ export default {
     &__Title{
         display: block;
         font-size: large;
+        font-weight: bold;
     }
+}
+@media only screen and (max-width: 768px) {
+  .PartnerItem {
+    margin: 5px
+  }
 }
 </style>

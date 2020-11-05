@@ -45,10 +45,6 @@ export default {
     text-align: right;
     width: 100%;
     margin-bottom: 20px;
-    /*background-image: url('../assets/header2.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-color: #9fb2c4;
   }
   .NavBar__Item{
@@ -66,5 +62,19 @@ export default {
     float: left;
     margin-top: -20px;
     margin-left: 100px;
+  }
+  @media only screen and (max-width: 768px){
+  .NavBar__Image{
+    margin-left: 20px;
+    margin-top: 20px
+  }
+  .NavBar__Item{
+    font-size: 14px;
+    margin: auto 4px;
+    display: block;
+  }
+  .NavBar {
+    padding: 10px;
+  }
   }
 </style>

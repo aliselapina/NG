@@ -28,17 +28,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.PhilosophyPage__TextBox{
-  border: 1px solid gray;
-  border-radius: 5px;
-  width: 70%;
-  position: relative;
-  margin: 30px auto;
-  padding: 20px;
-}
 .PhilosophyPage__Stories{
   margin: auto auto 50px auto;
   position: relative;
-  width: 80%;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .PhilosophyPage__Stories{
+  margin: auto auto 20px -15px;
+}
 }
 </style>

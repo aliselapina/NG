@@ -41,25 +41,6 @@ export default {
     pos_percentage () {
       return `${(this.position / this.width) * 100}%`
     }
-    // state_class () {
-    //   if (this.state) {
-    //     return 'active'
-    //   }
-    // },
-    // doubleLabelClass () {
-    //   if (!this.state && this.secondLabelValue.length > 0) {
-    //     return 'active'
-    //   } else if (this.state && this.secondLabelValue.length === 0) {
-    //     return 'active'
-    //   }
-    // },
-    // switcherClass () {
-    //   if (this.secondLabelValue.length > 0) {
-    //     return ''
-    //   } else if (this.state && this.secondLabelValue.length === 0) {
-    //     return 'active'
-    //   }
-    // }
   },
   watch: {
     position () {
@@ -216,4 +197,44 @@ export default {
         transition: transform 0.05s ease-in-out;
     }
     }
+
+@media only screen and (max-width: 768px) {
+  $width: 250px;
+  $switch-width: 125px;
+  $button-size: 40px;
+  .ToggleWithText {
+        padding: 0 0 10px 0;
+        margin: auto;
+        &__label
+    {
+        font-size: 12px;
+        position: relative;
+    &--right {
+        margin-left: -101px;
+    }
+    }
+    &__TextValue{
+        position: absolute;
+        width: 90px;
+        &--left
+    {
+        top:-31px;
+        left: -82px;
+    }
+    &--right {
+        top: -22px;
+        left: 0px;
+    }
+    }
+    &__switch {
+        width: $width;
+        height: $button-size;
+        margin-left: -106px;
+    }
+    &__circle {
+        width: $switch-width;
+        height: $button-size;
+    }
+    }
+}
 </style>

@@ -47,10 +47,10 @@ color: #fff;
     width: 125px;
   }
 .bigger{
-  width: 400px;
+  width: 300px;
 }
 .biggerItem{
-  width: 450px;
+  width: 350px;
   height: auto;
   cursor:inherit
 }
@@ -61,5 +61,16 @@ color: #fff;
 }
 #__BVID__1625__BV_toggle_ {
   visibility: none;
+}
+@media only screen and (max-width: 768px) {
+  .show {
+    left: -150px !important;
+  }
+  .dropdown-menu.show {
+    width: 300px;
+  }
+  li {
+    font-size: 13px !important;
+  }
 }
 </style>

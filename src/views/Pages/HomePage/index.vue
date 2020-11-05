@@ -27,7 +27,7 @@
               <router-link class="HomePage__Column column is-one-third align-top"
                           to="GamesAndSimulations">
                 Vēl
-                <p>Izstradājam lietišķās spēles un biznesa simulācijas dažādu nozaru uzņēmumiem, kā arī eksportējam mūsu radītās spēles ārzemju klientiem.</p></router-link>
+                <p>Izstrādājam lietišķās spēles un biznesa simulācijas dažādu nozaru uzņēmumiem, kā arī eksportējam mūsu radītās spēles ārzemju klientiem.</p></router-link>
               </div>
         </b-jumbotron>
 
@@ -35,14 +35,13 @@
             <p class="HomePage__list">Pieredzē balstīta mācīšanās <br> Prasmju spēks <br> Atšķirīga pieeja <br> Apmācību veikšanai nepieciešamā analīze <br> Pielāgošanās un elastība <br> Atklātie un korporatīvie semināri</p>
         </b-jumbotron>
         </div>
-  </template>
-
+</template>
 <script>
 export default {
   name: 'Home'
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 .HomePage {
   background-attachment: fixed;
   background-size: cover;
@@ -81,7 +80,7 @@ export default {
 .HomePage__firstJumb {
   background-image: url('../../../assets/games/parrunupavelnieks.jpg');
   background-size: 50% 450px;
-  padding: 0;
+  padding: 0 !important;
   height: 450px;
   &White{
     background-color: rgb(255,255,255,0.6);
@@ -97,5 +96,43 @@ export default {
 }
 .Jumbotron {
   padding: 20px;
+}
+.jumbotron {
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .HomePage__Column{
+    width: 100%;
+    margin: auto;
+  }
+  .HomePage__firstJumb {
+  background-image: url('../../../assets/games/parrunupavelnieks.jpg');
+  background-size: 100%;
+  padding: 0 !important;
+  height: 250px;
+  &White{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+  }
+}
+}
+h1 {
+  font-size: 35px !important;
+}
+.GamesCount {
+  font-size: 35px;
+}
+.HomePage__RouterLink{
+  font-size: 17px;
+  &:hover{
+    text-decoration: none;
+    color: darkslategray;
+  }
+  & span {
+    margin: -20px;
+  }
 }
 </style>
