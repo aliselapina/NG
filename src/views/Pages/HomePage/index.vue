@@ -7,8 +7,16 @@
                     to="GamesAndSimulations">
           <span> Mēs esam vadošais lietišķo spēļu un biznesa simulāciju izstrādātājs Baltijā</span> <br><br>
           <span> Uz šo brīdi izstrādātas</span> <br>
-          <span class="GamesCount">82</span> <br>
-          <span>spēles un simulācijas </span>
+          <span class="GamesCount">82
+            <div class="GamesCount__details">
+              <span>48 biznesa spēles</span> <br>
+              <span>27 mācību spēles</span> <br>
+              <span>7 psiholoģijas spēles</span>
+              </div>
+            </span> <br>
+          <span>spēles un simulācijas </span> <br><br>
+          <span> Izstrādes procesā: 4 </span> <br>
+          <span> Tiešsaistes spēles: 10 </span>
         </router-link>
       </div>
     </b-jumbotron>
@@ -81,18 +89,32 @@ export default {
   background-image: url('../../../assets/games/parrunupavelnieks.jpg');
   background-size: 50% 450px;
   padding: 0 !important;
-  height: 450px;
+  height: 400px;
   &White{
     background-color: rgb(255,255,255,0.6);
     width: 50%;
     float: left;
-    height: 450px;
+    height: 400px;
     padding: 40px;
   }
 }
 .GamesCount {
   font-size: 100px;
   margin: -20px;
+}
+.GamesCount__details {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  font-size: medium;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  float: right;
+  padding: 10px;
+}
+.GamesCount:hover > .GamesCount__details{
+  display: block;
 }
 .Jumbotron {
   padding: 20px;
@@ -111,10 +133,10 @@ export default {
   background-image: url('../../../assets/games/parrunupavelnieks.jpg');
   background-size: 100%;
   padding: 0 !important;
-  height: 250px;
+  height: 320px;
   &White{
     width: 100%;
-    height: 250px;
+    height: 320px;
     padding: 10px;
   }
 }

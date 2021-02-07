@@ -6,7 +6,7 @@
       <div class="text"> Mēs radām biznesa  spēles un interaktīvus apmācību instrumentus</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs ticam pieredzē balstītām apmācībām</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mūsu vairāk kā 20 gadu pieredze dažādās valstīs apliecina, ka spēle ir labākais un ātrākais apmācību veids</div></button>
-    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mums ir svarīgi: ticēt tam, ko darām, uzticēties un būt uzticamiem, būt inovatīviem un darīt no</div></button>
+    <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mums ir svarīgi: ticēt tam, ko darām, uzticēties un būt uzticamiem, būt inovatīviem un darīt no sirds</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs eksportējam savus produktus uz ASV, Kanādu, Lietuvu, Krieviju, Ukrainu, Poliju, Baltkrieviju , Rumāniju un Indonēziju</div></button>
     <button class="AboutUs__BannerItem column is-one-third"><div class="text">Mēs radām instrumentus apmācībām uzņēmumu iekšienē</div></button>
 </div>
